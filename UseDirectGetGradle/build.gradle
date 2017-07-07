@@ -1,0 +1,19 @@
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+    maven {
+        url 'https://raw.githubusercontent.com/NawaMan/maven-repository/master/'
+    }
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    
+    compile 'directget:get:0.1-SNAPSHOT'
+
+    testCompile 'junit:junit:4.12'
+}
